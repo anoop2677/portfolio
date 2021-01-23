@@ -19,6 +19,8 @@ At Tavisca I have learned how to build teams, build relationships with customers
 
 - Got more interested in the back end technologies, the logic parts behind every actions, started developing API's.
 
+- Just started to make history.
+
 You can ask me in person for other stories that I'm afraid to share with the internet.
 
 # I like

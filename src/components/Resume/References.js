@@ -5,9 +5,11 @@ const References = () => (
   <div className="references">
     <div className="link-to" id="references" />
     <div className="title">
-      <Link to="/contact">
-        <h3>References are available upon request</h3>
-      </Link>
+      <h3>Interested, want to know more.
+        <Link to="/contact">
+          <b>Contact Me.</b>
+        </Link>
+      </h3>
     </div>
   </div>
 );
