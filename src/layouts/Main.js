@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { Container, Grid, Box } from '@mui/material';
 
 import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
@@ -15,13 +16,45 @@ const Main = (props) => (
       {props.title && <title>{props.title}</title>}
       <meta name="description" content={props.description} />
     </Helmet>
-    <div id="wrapper">
+    <Box sx={{ 
+      display: 'flex', 
+      flexDirection: 'column',
+      minHeight: '100vh',
+      maxWidth: '1400px',
+      mx: 'auto',
+      px: { xs: 2, sm: 3 }
+    }}>
       <Navigation />
-      <div id="main">
-        {props.children}
-      </div>
-      {props.fullPage ? null : <SideBar />}
-    </div>
+      <Box sx={{ 
+        display: 'flex', 
+        flexDirection: { xs: 'column', md: 'row' },
+        flex: 1,
+        mt: 2
+      }}>
+        {!props.fullPage && (
+          <Box 
+            sx={{ 
+              flex: { md: '0 0 33.333333%' }, 
+              maxWidth: { md: '33.333333%' },
+              pr: { md: 1 }
+            }}
+          >
+            <SideBar />
+          </Box>
+        )}
+        <Box 
+          component="main" 
+          sx={{ 
+            flex: { md: '0 0 66.666667%' }, 
+            maxWidth: { md: '66.666667%' },
+            pl: { md: 3 },
+            mb: 4 
+          }}
+        >
+          {props.children}
+        </Box>
+      </Box>
+    </Box>
   </>
 );
 

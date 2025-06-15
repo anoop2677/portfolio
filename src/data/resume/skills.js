@@ -8,7 +8,7 @@ const skills = [
     category: ['Web Development', 'DS ALGORITHM', 'Languages'],
   },
   {
-    title: 'React/Apollo Client',
+    title: 'React/Apollo Client/RTK Query',
     competency: 3,
     category: ['Web Development', 'Javascript'],
   },
@@ -16,6 +16,16 @@ const skills = [
     title: 'PostgreSQL/SQL',
     competency: 3,
     category: ['Web Development', 'Databases', 'Languages'],
+  },
+  {
+    title: 'MySQL',
+    competency: 3,
+    category: ['Web Development', 'Databases'],
+  },
+  {
+    title: 'MongoDB',
+    competency: 3,
+    category: ['Web Development', 'Databases', 'NoSQL'],
   },
   {
     title: 'Git',
@@ -38,9 +48,34 @@ const skills = [
     category: ['Languages'],
   },
   {
+    title: 'GoLang',
+    competency: 2,
+    category: ['Languages', 'Web Development'],
+  },
+  {
     title: 'GraphQL',
     competency: 3,
     category: ['Web Development', 'Databases'],
+  },
+  {
+    title: 'Kubernetes',
+    competency: 3,
+    category: ['DevOps', 'Cloud'],
+  },
+  {
+    title: 'Terraform',
+    competency: 3,
+    category: ['DevOps', 'Infrastructure as Code'],
+  },
+  {
+    title: 'Grafana',
+    competency: 3,
+    category: ['DevOps', 'Monitoring'],
+  },
+  {
+    title: 'Harness/Jenkins',
+    competency: 3,
+    category: ['DevOps', 'CI/CD'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
